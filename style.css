@@ -1,0 +1,91 @@
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+body {
+ font-size: 62.5%;
+ font-family: fantasy;
+}
+section {
+ position: relative;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+h2 {
+ padding: 1rem;
+ font-size: 1rem;
+ display: flex;
+ justify-content: center;
+ text-align: center;
+ width: 100%;
+ color: white;
+ font-weight: 900;
+ font-family: monospace;
+ position: absolute;
+ line-height: 2;
+ z-index: 2;
+}
+.left {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ height: 100dvh;
+ width: 50%;
+ background-image: linear-gradient(to left, #434343 0%, black 100%);
+ background-blend-mode: multiply;
+ color: black;
+ font-size: 2rem;
+}
+.pbtn,
+.text {
+ display: flex;
+ flex-wrap: wrap;
+ padding: 1rem;
+ justify-content: center;
+ align-items: center;
+ border: none;
+ border-radius: 36px;
+ cursor: pointer;
+ transition: all 0.2s;
+}
+.pbtn:hover,
+.copy:hover {
+ background-color: greenyellow;
+ transform: translateY(-2px);
+}
+.right {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+ height: 100dvh;
+ width: 50%;
+ font-size: 2rem;
+ background-image: linear-gradient(to right, #434343 0%, black 100%);
+ color: white;
+}
+.copy {
+ cursor: pointer;
+ padding: 0.5rem;
+ font-size: 1rem;
+ background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+ border: none;
+ border-radius: 50px;
+}
+textarea {
+ overflow: hidden;
+ word-wrap: break-word;
+ cursor: pointer;
+ font-weight: 800;
+ margin-bottom: 6px;
+ text-align: center;
+ width: 50%;
+ height: 3rem;
+ box-sizing: border-box;
+ border-radius: 4px;
+ background-image: linear-gradient(45deg, #8baaaa 0%, #ae8b9c 100%);
+ resize: none;
+}
